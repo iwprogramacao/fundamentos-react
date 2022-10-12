@@ -9,3 +9,8 @@
 .header img {
   height: 1.25rem;
 }
+
+.header strong::before {
+  content: "\2022";
+  padding: 0 0.75rem;
+}

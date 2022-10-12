@@ -18,14 +18,6 @@
   align-items: center;
 }
 
-.author img {
-  height: calc(3rem + 12px);
-  width: calc(3rem + 12px);
-  border-radius: 8px;
-  border: 4px solid var(--gray-800);
-  outline: 2px solid var(--green-500);
-}
-
 .authorInfo strong {
   color: var(--gray-100);
   line-height: 1.6;
@@ -130,7 +122,11 @@
   transition: background-color 0.2s;
 }
 
-.commentForm button[type="submit"]:hover {
+.commentForm button[type="submit"]:disabled {
+  opacity: 0.6;
+}
+
+.commentForm button[type="submit"]:not(disabled):hover {
   background-color: var(--green-300);
 }
 
